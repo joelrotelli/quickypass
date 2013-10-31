@@ -36,48 +36,55 @@
       </div>
     </div>
 
-    <div class="container">
+    <div id="wrap">
 
-      <hr>
+      <div id-"main" class="container">
 
-      <form class="form-horizontal" role="form">
-         <div class="form-group">
-             <input ng-model="query" type="text" class="form-control" placeholder="Rechercher un client...">
-             <input type="hidden" ng-model="orderProp" value="name">
-         </div>
+        <br />
+        <form class="form-horizontal" role="form">
+           <div class="form-group">
+               <input ng-model="query" type="text" class="form-control" placeholder="Rechercher un client...">
+               <input type="hidden" ng-model="orderProp" value="name">
+           </div>
         </form>
+        <hr>
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default" ng-repeat="client in clients | filter: query | orderBy:orderProp">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{client.id}}">
+                 {{client.name}}
+                </a>
+              </h4>
+            </div>
+            <div id="collapse{{client.id}}" class="panel-collapse collapse">
+              <div class="panel-body" ng-hide="!client.projects.length">
 
-      <div class="table-responsive">
-          <table class="table table-hover">
-              <tbody>
-                  <tr ng-repeat="client in clients | filter: query | orderBy:orderProp">
-                    <th>{{client.name}}
-                        <!-- <table class="table subtable">
-                            <thead>
-                                <th>Sample project 1</th>
-                                <th>Sample project 2</th>
-                                <th>Project 3</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>les accès</td>
-                                    <td>les accès </td>
-                                    <td>les accès </td>
-                                </tr>
-                            </tbody>
-                        </table>
- -->
-                      </th>
-                  </tr>
-              </tbody>
-          </table>
-      </div>
+                <table class="table subtable"  ng-repeat='project in client.projects | filter: query | orderBy:orderProp'>
+                    <thead>
+                        <th>{{project.name}}</th>
+                    </thead>
+                    <tbody ng-hide="!project.access.length">
+                        <tr>
+                            <td>{{project.access}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- /container -->
+    </div>
+
+    <footer>
+      <p>&copy; QuickyPass 2013</p>
+    </footer>
 
 
-      <footer>
-        <p>&copy; QuickyPass 2013</p>
-      </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>

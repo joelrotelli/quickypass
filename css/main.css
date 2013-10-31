@@ -4,6 +4,19 @@
    Author's custom styles
    ========================================================================== */
 
+html, body {
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom:15px; /* this needs to be bigger than footer height*/
+}
+
 
 table.active{
   background: #F5F5F5;
@@ -14,7 +27,15 @@ table.active{
 }
 
 
-
+footer {
+  position: relative;
+  margin-top: -20px; /* negative value of footer height */
+  height: 20px;
+  clear:both;
+  padding-top:10px;
+  text-align: center;
+  background: #F9F9F9;
+}
 
 
 

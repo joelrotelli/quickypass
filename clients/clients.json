@@ -1,15 +1,22 @@
 [
-    { "name" : "Sample client 1",
-      "project" : [
+    { "id" : 1,
+      "name" : "Sample client 1",
+      "projects" : [
         {"name" : "Sample project 1"},
         {"name" : "Project 2"},
-        {"name" : "Project 3","login" : "admin", "password" : "samplepass"}
+        {"name" : "Project 3", "access" : " details des accès ici"},
+        {"name" : "Sample project 1"},
+        {"name" : "Project 2"},
+        {"name" : "Project 3", "access" : " details des accès ici"},
+        {"name" : "Sample project 1"},
+        {"name" : "Project 2"},
+        {"name" : "Project 3", "access" : " details des accès ici"}
       ]
     },
-    {"name" : "Sample client 2"},
-    {"name" : "Jonhson & Jonhson"},
-    {"name" : "Foo Corp"},
-    {"name" : "Lorem and son"}
+    {"id" : 2, "name" : "Sample client 2"},
+    {"id" : 3, "name" : "Jonhson & Jonhson"},
+    {"id" : 4, "name" : "Foo Corp"},
+    {"id" : 5, "name" : "Lorem and son"}
 
 
 
