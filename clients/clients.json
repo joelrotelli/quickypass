@@ -1,0 +1,16 @@
+[
+    { "name" : "Sample client 1",
+      "project" : [
+        {"name" : "Sample project 1"},
+        {"name" : "Project 2"},
+        {"name" : "Project 3","login" : "admin", "password" : "samplepass"}
+      ]
+    },
+    {"name" : "Sample client 2"},
+    {"name" : "Jonhson & Jonhson"},
+    {"name" : "Foo Corp"},
+    {"name" : "Lorem and son"}
+
+
+
+  ]
