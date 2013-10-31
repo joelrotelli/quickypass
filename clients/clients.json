@@ -1,22 +1,27 @@
 [
     { "id" : 1,
-      "name" : "Sample client 1",
+      "name" : "Thalamus",
       "projects" : [
-        {"name" : "Sample project 1"},
-        {"name" : "Project 2"},
-        {"name" : "Project 3", "access" : " details des accès ici"},
-        {"name" : "Sample project 1"},
-        {"name" : "Project 2"},
-        {"name" : "Project 3", "access" : " details des accès ici"},
-        {"name" : "Sample project 1"},
-        {"name" : "Project 2"},
-        {"name" : "Project 3", "access" : " details des accès ici"}
+        { "name" : "ESIEE"},
+        { "name" : "Locasun"},
+        {
+          "name" : "SIOM",
+          "access" : " ADMIN <br />login: siom<br />pass : !Thalamus75!<br /><br />FTP<br />hote : ftp.thalamus-ic.fr<br />login:talamus<br />pass: !thalamus"
+        }
       ]
     },
-    {"id" : 2, "name" : "Sample client 2"},
-    {"id" : 3, "name" : "Jonhson & Jonhson"},
-    {"id" : 4, "name" : "Foo Corp"},
-    {"id" : 5, "name" : "Lorem and son"}
+    { "id" : 2, "name" : "SFMV"},
+    { "id" : 3,
+      "name" : "Polyèdres",
+      "projects" : [
+        {
+          "name" : "Genin",
+          "acces" : "FTP<br />login: bla<br />pass: alb"
+        }
+      ]
+    },
+    {"id" : 4, "name" : "Maire Injoux Génissiat"},
+    {"id" : 5, "name" : "Novolux"}
 
 
 
