@@ -1,21 +1,14 @@
-var passApp = angular.module('quickyPass', []);
+var quickyPass = angular.module('quickyPass', ["xeditable"]);
 
-passApp.controller('ClientsListCtrl', function ClientsListCtrl($scope, $http){
+quickyPass.run(function(editableOptions) {
+  editableOptions.theme = 'bs3'; // bootstrap3 theme. Can be also 'bs2', 'default'
+});
+
+quickyPass.controller('ClientsListCtrl', function ClientsListCtrl($scope, $http){
 
   $http.get('clients/clients.json').success(function(data){
     $scope.clients = data;
   });
 
   $scope.orderProp = 'name';
-});
-
-
-var phonecatApp = angular.module('phonecatApp', []);
-
-phonecatApp.controller('PhoneListCtrl', function PhoneListCtrl($scope, $http) {
-  $http.get('phones/phones.json').success(function(data) {
-    $scope.phones = data;
-  });
-
-  $scope.orderProp = 'age';
 });
