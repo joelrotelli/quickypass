@@ -1,4 +1,4 @@
-var quickyPass = angular.module('quickyPass', ["xeditable"]);
+var quickyPass = angular.module('quickyPass', ['xeditable', 'ngSanitize']);
 
 quickyPass.run(function(editableOptions) {
   editableOptions.theme = 'bs3'; // bootstrap3 theme. Can be also 'bs2', 'default'

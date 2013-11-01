@@ -19,6 +19,7 @@
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
         <script src="js/lib/angular.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular-sanitize.js"></script>
         <script src="tools/angular-xeditable/js/xeditable.js"></script>
 
     </head>
@@ -69,7 +70,7 @@
                     </thead>
                     <tbody ng-hide="!project.access.length">
                         <tr>
-                            <td>{{project.access}}</td>
+                            <td ng-bind-html="project.access"></td>
                         </tr>
                     </tbody>
                 </table>
