@@ -1,2 +1,8 @@
 *.sublime*
-clients/clients.json
+oil
+fuel/app/logs/*/*/*
+fuel/app/cache/*/*
+fuel/app/config/*
+.gitmodules
+docs
+public/clients/*

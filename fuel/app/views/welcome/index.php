@@ -11,16 +11,16 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="tools/angular-xeditable/css/xeditable.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="assets/tools/angular-xeditable/css/xeditable.css">
+        <link rel="stylesheet" href="assets/css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
-        <script src="js/lib/angular.js"></script>
+        <script src="assets/js/lib/angular.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular-sanitize.js"></script>
-        <script src="tools/angular-xeditable/js/xeditable.js"></script>
+        <script src="assets/js/angular-xeditable/js/xeditable.js"></script>
 
     </head>
     <body ng-controller="ClientsListCtrl">
@@ -84,22 +84,6 @@
                 </div>
               </div>
 
-                <!--<table class="table subtable"  ng-repeat='project in client.projects | filter: query | orderBy:orderProp'>
-                    <thead>
-                        <th>{{project.name}}</th>
-                    </thead>
-                    <tbody ng-hide="!project.access.length">
-                        <tr>
-                          <td>
-                          <div ng-repeat="access in project.access">
-                            <h5 class="access-title">{{access.title}}</h5>
-                            <div class="access-desc" ng-bind-html="access.desc"></div>
-
-                          </div>
-                        </tr>
-                    </tbody>
-                </table>-->
-
               </div>
             </div>
           </div>
@@ -109,15 +93,15 @@
     </div>
 
     <footer>
-      <p>&copy; QuickyPass 2013</p>
+      <p>&copy; QuickyPass 2013 - Powered by AngularJS, FuelPHP and <a href="http://www.joel-rotelli.info" target="_blank">Joël ROTELLI</a></p>
     </footer>
 
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
-        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
 
-        <script src="js/main.js"></script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
