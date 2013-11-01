@@ -46,7 +46,7 @@
         </form>
         <hr>
         <div class="panel-group" id="accordion">
-          <div class="panel panel-default" ng-repeat="client in clients | filter: query | orderBy:orderProp">
+          <div class="panel panel-default" ng-repeat="client in filtered = (clients | filter: query | orderBy:orderProp)">
             <div class="panel-heading">
               <h4 class="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{client.id}}">
@@ -59,7 +59,8 @@
                 </a>
               </h4>
             </div>
-            <div id="collapse{{client.id}}" class="panel-collapse collapse">
+
+            <div id="collapse{{client.id}}" class="panel-collapse collapse " ng-class="{'collapse': filtered.length != 1, 'in': filtered.length == 1}">
               <div class="panel-body" ng-hide="!client.projects.length">
 
                 <table class="table subtable"  ng-repeat='project in client.projects | filter: query | orderBy:orderProp'>

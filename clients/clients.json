@@ -7,10 +7,10 @@
         {"name" : "Project 3", "access" : " details des accès ici"},
         {"name" : "Sample project 1"},
         {"name" : "Project 2"},
-        {"name" : "Project 3", "access" : " details des accès ici"},
+        {"name" : "Project 4", "access" : " details des accès ici"},
         {"name" : "Sample project 1"},
-        {"name" : "Project 2"},
-        {"name" : "Project 3", "access" : " details des accès ici"}
+        {"name" : "Project 5"},
+        {"name" : "Project 6", "access" : " details des accès ici"}
       ]
     },
     {"id" : 2, "name" : "Sample client 2"},
