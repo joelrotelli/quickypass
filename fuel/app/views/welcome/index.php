@@ -13,10 +13,10 @@
 
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="assets/tools/angular-xeditable/css/xeditable.css">
+        <link rel="stylesheet" href="assets/js/angular-xeditable/css/xeditable.css">
         <link rel="stylesheet" href="assets/css/main.css">
 
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
         <script src="assets/js/lib/angular.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular-sanitize.js"></script>

@@ -6,8 +6,9 @@ quickyPass.run(function(editableOptions) {
 
 quickyPass.controller('ClientsListCtrl', function ClientsListCtrl($scope, $http){
 
-  $http.get('clients/clients.json').success(function(data){
+  $http.get('list/list.json').success(function(data){
     $scope.clients = data;
+    console.log(data);
   });
 
   $scope.orderProp = 'name';

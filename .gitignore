@@ -6,3 +6,4 @@ fuel/app/config/*
 .gitmodules
 docs
 public/clients/*
+todo
