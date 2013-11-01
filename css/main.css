@@ -38,6 +38,25 @@ table.active{
   font-size: .95em;
 }
 
+.access-title{
+  font-weight: bold;
+  border-bottom: 2px solid #E9E9E9;
+  padding: 2px;
+  background: #F9F9F9;
+}
+
+.access-desc{
+
+  margin-bottom: 15px;
+}
+
+.access-desc label{
+  width: 150px;
+  display: inline-block;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
 
 footer {
   position: relative;
