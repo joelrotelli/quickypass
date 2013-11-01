@@ -2,12 +2,24 @@
     { "id" : 1,
       "name" : "Thalamus",
       "projects" : [
+<<<<<<< HEAD
         { "name" : "ESIEE"},
         { "name" : "Locasun"},
         {
           "name" : "SIOM",
           "access" : " ADMIN <br />login: siom<br />pass : !Thalamus75!<br /><br />FTP<br />hote : ftp.thalamus-ic.fr<br />login:talamus<br />pass: !thalamus"
         }
+=======
+        {"name" : "Sample project 1"},
+        {"name" : "Project 2"},
+        {"name" : "Project 3", "access" : " details des accès ici"},
+        {"name" : "Sample project 1"},
+        {"name" : "Project 2"},
+        {"name" : "Project 4", "access" : " details des accès ici"},
+        {"name" : "Sample project 1"},
+        {"name" : "Project 5"},
+        {"name" : "Project 6", "access" : " details des accès ici"}
+>>>>>>> develop
       ]
     },
     { "id" : 2, "name" : "SFMV"},
